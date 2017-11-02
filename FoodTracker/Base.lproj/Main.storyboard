@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="y78-M0-OA2">
-                                <rect key="frame" x="0.0" y="63.999999999999993" width="375" height="96.333333333333314"/>
+                                <rect key="frame" x="0.0" y="63.999999999999972" width="375" height="424.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2iV-dO-JMc">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="96.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="424.33333333333331"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4yy-ff-zIL">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="96.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="424.33333333333331"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6O-Iy-9nD">
                                                         <rect key="frame" x="0.0" y="0.0" width="83.333333333333329" height="20.333333333333332"/>
@@ -45,6 +46,12 @@
                                                             <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DmZ-Vy-sdo"/>
                                                         </connections>
                                                     </button>
+                                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="AyJ-QS-wim">
+                                                        <rect key="frame" x="0.0" y="104.33333333333337" width="320" height="320"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="AyJ-QS-wim" secondAttribute="height" multiplier="1:1" id="XgU-UH-TFs"/>
+                                                        </constraints>
+                                                    </imageView>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="vKK-0n-ePf" secondAttribute="trailing" id="w2U-LY-8Bo"/>
@@ -73,4 +80,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultPhoto" width="540" height="540"/>
+    </resources>
 </document>
